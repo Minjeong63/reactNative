@@ -1,15 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import { Button, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, View, Image } from "react-native";
 import Introduce from "./src/introduce";
+// import favicon from "./assets/favicon.png";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>민정 홈피</Text>
-      <TouchableOpacity>
-        <Text>로그인</Text>
-      </TouchableOpacity>
-      <StatusBar style="auto" />
+      <Introduce />
+      {/* <Image source={favicon} style={{ width: 20, height: 20 }} /> */}
     </View>
   );
 }
@@ -24,5 +21,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    paddingTop: 50,
+    paddingBottom: 50,
   },
 });
